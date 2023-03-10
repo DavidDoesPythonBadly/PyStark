@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "PyStark"
+version = "1.2.8"
+authors = [
+    {name = "Justin Chase (patcher)", email = "justin@justinwritescode.com"},
+    {name = "ShivangKakkar (original author)", email = "starkbotsindustries@gmail.com"},
+]
+description = "A video sticker bot to turn MP4s and GIfs into Telegram stickers."
+requires-python = ">=3.9"
+keywords = ["telegram", "bot", "pyrogram", "python", "telegram-bot"]
+license = {text = "GPLv3+"}
+classifiers = [
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'Intended Audience :: Education',
+        'Intended Audience :: Information Technology',
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.9',
+        'Natural Language :: English',
+        'Topic :: Communications :: Chat',
+        'Topic :: Education :: Testing',
+        'Topic :: Software Development :: Libraries',
+        'Topic :: Software Development :: Libraries :: Python Modules'
+]
+[project.urls]
+"Homepage" = "https://github.com/justinwritescode/pystark"
