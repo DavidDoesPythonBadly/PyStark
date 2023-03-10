@@ -17,23 +17,35 @@
 # along with PyStark. If not, see <https://www.gnu.org/licenses/>.
 
 
-@ts-check
+# @ts-check
 
-/**
- * @typedef {import("./client")} Client
- * @typedef {import("./types")} TelegramClient
- */
+from typing import Callable
 
-/**
- * @param {TelegramClient} client
- */
-const idle = client => client.idle();
+# /**
+#  * @typedef {import("./client")} Client
+#  * @typedef {import("./types")} TelegramClient
+#  */
 
-/**
- * @param {Client} client
- * @param {import("./types").AnyRequest} request
- */
-const compose = (client, request) => client._compose(request);
+from .client import Client
+from types import TelegramClent
+from types import AnyRequest
+from pywifi import const
+
+# /**
+#  * @param {TelegramClient} client
+#  */
+const
+idle1: Callable[[TelegramClent], any] = lambda client: client.idle()
+
+
+# /**
+#  * @param {Client} client
+#  * @param {import("./types").AnyRequest} request
+#  */
+const
+compose: Callable[[Client, AnyRequest], any] = lambda client, request: client._compose(
+    request
+)
 
 module.exports = {
     compose,
@@ -49,4 +61,4 @@ module.exports = {
     StopPropagation,
     ContinuePropagation,
     crypto_executor,
-};
+}
