@@ -2,8 +2,8 @@
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 [project]
-name = "PyStarkPatched"
-version = "0.0.1"
+name = "PyStark"
+version = "1.2.9"
 authors = [
     {name = "Justin Chase (patcher)", email = "justin@justinwritescode.com"},
     {name = "ShivangKakkar (original author)", email = "starkbotsindustries@gmail.com"},
